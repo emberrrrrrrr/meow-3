@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubbly Soaps</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Bubbly Soaps</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Welcome to Bubbly Soaps</h2>
+            <p>Handcrafted soaps with a touch of fun!</p>
+            <a href="#products" class="btn">Explore Our Soaps</a>
+        </div>
+        <div class="bubbles">
+            <div class="bubble" style="--i:1;"></div>
+            <div class="bubble" style="--i:2;"></div>
+            <div class="bubble" style="--i:3;"></div>
+            <div class="bubble" style="--i:4;"></div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>At Bubbly Soaps, we create artisanal soaps that are as delightful to the senses as they are to the skin. Each soap is crafted with care, using natural ingredients and a touch of creativity.</p>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="product">
+                <img src="soap1.jpg" alt="Lavender Soap">
+                <h3>Lavender Bliss</h3>
+                <p>A calming lavender soap perfect for relaxation.</p>
+            </div>
+            <div class="product">
+                <img src="soap2.jpg" alt="Citrus Burst">
+                <h3>Citrus Burst</h3>
+                <p>Invigorate your senses with a fresh citrus fragrance.</p>
+            </div>
+            <div class="product">
+                <img src="soap3.jpg" alt="Minty Fresh">
+                <h3>Minty Fresh</h3>
+                <p>Refresh and rejuvenate with the coolness of mint.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Bubbly Soaps. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
